@@ -1,27 +1,30 @@
 /* UniversityList.css */
 .UniversityListContainer {
     padding-top: 60px;
-    padding-bottom: 20px;
-    padding-left:20px;
-    padding-right:20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: 50px;
     margin-right: 50px;
     background-color: rgba(255, 255, 255, 0.9);
     min-height: calc(100vh - 60px - 20px);
     display: flex;
-    flex-direction: column; /* 纵向排列 */
-    align-items: center; /* 中心对齐 */
-    text-align: center; /* 文字居中对齐 */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
   .UniversityTitle {
-    margin-bottom: 10px; /* 添加底部间距 */
-    font-size: 30px; /* 设置字体大小 */
+    margin-bottom: 10px;
+    font-size: 30px;
   }
+  
   .SearchUniArea {
     display: flex;
-    align-items: center; /* 垂直对齐 */
-    margin-bottom: 20px; /* 底部间距 */
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; /* 确保宽度充满父容器 */
+    justify-content: center; /* 水平居中 */
   }
   
   .SearchUni {
@@ -29,23 +32,31 @@
     border: 1px solid black;
     border-radius: 20px;
     padding: 5px 10px;
-    height: 40px; /* 确保与按钮高度一致 */
+    height: 40px;
     width: 500px;
-    box-sizing: border-box; /* 确保 padding 和 border 包含在高度内 */
+    box-sizing: border-box;
   }
   
-  .SearchButton {
-    height: 40px; /* 确保与输入框高度一致 */
+  .SearchUniButton {
+    height: 40px;
     width: 40px;
+    border: none;
     border-radius: 20px;
     background-color: black;
     color: white;
-    font-size: 14px; /* 调整字体大小以适应按钮 */
-    margin-left: 20px; /* 与输入框之间的间距 */
+    margin-left: 10px; /* 与输入框之间的间距 */
+    cursor: pointer;
+  }
+
+  .SearchUniButton svg {
+    stroke-width: 30;
+    width: 20px;
+    height: 20px;
   }
   
   .UniversityGrid {
     display: flex;
     flex-wrap: wrap;
-    width: 100%; /* 确保宽度充满父容器 */
+    width: 100%;
+    justify-content: space-around; /* 水平均匀分布 */
   }

@@ -1,0 +1,26 @@
+.UniversitiesContainer {
+    background-color: white;
+    margin: 15px;
+    flex: 0 1 calc(25% - 30px); /* 每行四个，考虑到间距 */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    height: 250px;
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 灰色阴影 */
+    cursor: pointer;
+  }
+  
+  .UniIcon {
+    width: 200px; /* 图片的宽度 */
+    height: 200px; /* 图片的高度 */
+    object-fit: cover; /* 保持图片的比例 */
+    margin-bottom: 10px; /* 图片与文字之间的间距 */
+  }
+  
+  .UniName {
+    margin: 0; /* 去掉段落的默认外边距 */
+    text-align: center; /* 文字居中 */
+  }

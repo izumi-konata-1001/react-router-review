@@ -1,0 +1,60 @@
+/* Navbar.css */
+.NavbarContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .WebsiteHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+    height: 60px;
+    color: white;
+  }
+  
+  .WebsiteTitle {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .NavButton {
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* 初始状态，隐藏Navlink */
+  .Navlink {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(48, 46, 46, 0.8);
+    transition: max-height 0.4s ease;
+  }
+  
+  .Navlink.show {
+    max-height: 500px; 
+  }
+  
+  .Navlink li {
+    list-style: none;
+    padding: 10px 20px;
+  }
+  
+  .Navlink li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .Navlink li a:hover {
+    text-decoration: underline;
+  }

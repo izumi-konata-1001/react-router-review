@@ -1,0 +1,53 @@
+/* Home.css */
+.HomeContainer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background-color: rgba(99, 99, 99, 0.5);
+    min-height: calc(100vh - 60px - 20px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .SearchContainer {
+    text-align: left;
+    position: relative; /* 确保容器是相对定位 */
+  }
+  
+  .InputTitle {
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+  
+  .SearchUniInput {
+    background-color: rgb(255, 255, 255, 0.8);
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px 10px;
+    height: 40px; /* 确保与按钮高度一致 */
+    width: 500px;
+    box-sizing: border-box; /* 确保 padding 和 border 包含在高度内 */
+  }
+  
+  .SearchButton {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius:17.5px 17.5px 17.5px 17.5px;
+    cursor: pointer;
+    height: 35px; /* 确保与输入框高度一致 */
+    width:35px;
+    position: absolute; /* 绝对定位 */
+    top: 2.5px;
+    right: 2.5px;
+    box-sizing: border-box; /* 确保 padding 和 border 包含在高度内 */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SearchButton svg {
+    stroke-width: 10;
+    width: 20px;
+    height: 20px;
+  }
